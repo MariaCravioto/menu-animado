@@ -1,0 +1,116 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+header{
+  width: 100%;
+}
+
+nav{
+  margin: 20px auto;
+  margin-top: 0;
+  width: 100%;
+}
+
+nav ul{
+  list-style: none;
+}
+
+nav > ul{
+  display: table;/*para que todos los elementos tengan un tamaño similar*/
+  width: 100%;
+  background-color: #000;
+}
+
+nav > ul li{
+  display: table-cell;/*para poner un elemento a lado de otro y pueda medir lo mismo*/
+}
+
+/*submenu*/
+
+nav > ul > li:hover > ul{
+  display: block;
+}
+
+nav > ul > li > ul{
+  display: block;
+  width: 320px;
+  height: 50px;
+  position: absolute;
+  background-color: #000;
+  color: #FFFFFF;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: all .3s ease;/*css3 generator/animacion*/
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+nav > ul > li > ul{
+  display: none;
+}
+
+nav > ul > li > ul > li{
+  padding-left: 10px;
+}
+
+nav > ul li a{
+  color: #FFFFFF;
+  display: block;
+  line-height: 20px;
+  padding: 20px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+nav > ul > li > ul > li a:hover{
+  background-color: #ffc107;
+}
+
+nav > ul > li > a span{
+  background-color: #ffa000;
+  display: block;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  position: absolute;
+  top: -55px;/*para esconderlo*/
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+nav > ul > li > a span .fa{
+  display: block;
+  line-height: 60px;
+}
+nav > ul > li > a:hover > span{
+  top: 0;
+}
+
+/*colores*/
+nav ul li a .uno{
+  background-color: #0e5061;
+}
+
+nav ul li a .dos{
+  background-color: #5da5a2;
+}
+
+nav ul li a .tres{
+  background-color: #f25724;
+}
+
+
+/*prueba*/
